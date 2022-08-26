@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arya&display=swap" rel="stylesheet">
+    <title>Committee</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+    }
+
+    .p {
+        margin: auto auto;
+        display: block;
+    }
+
+    .p:first-child {
+        font-family: 'Arya';
+    }
+
+    .item1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        font-family: 'Arvo', serif;
+        top: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .item2 {
+        place-self: center;
+    }
+
+    header ul {
+        list-style: none;
+    }
+
+
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header ul li {
+        margin: 2px;
+        width: 130px;
+        height: 30px;
+        background-color: rgb(23, 97, 92);
+        color: #fff;
+        font-weight: bold;
+        line-height: 25px;
+        font-size: 15px;
+        text-align: center;
+        border: 5px solid black;
+    }
+
+    header ul li ul li {
+        margin: 0px;
+    }
+
+    header ul li ul li:first-child {
+        border-bottom: none;
+    }
+
+    header ul li:hover {
+        background-color: chocolate;
+    }
+
+    header ul li ul {
+        display: none;
+    }
+
+    header ul li:hover>ul {
+        display: block;
+    }
+
+    header ul li ul li:first-child {
+        margin-top: 5px;
+    }
+
+    header ul li ul li ul li {
+        margin-left: 0px;
+    }
+
+    .oe {
+        margin-left: 120px;
+        margin-top: 0px;
+    }
+
+    header ul li li{
+        position: relative;
+    }
+
+    .nbt {
+        border-top: none;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    div.con2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    caption {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 2px;
+    }
+
+    th {
+        font-size: 20px;
+        color: blue;
+    }
+
+    .table1 tr td {
+        padding: 5px;
+    }
+
+    .table2 tr td {
+        padding: 7.6px;
+    }
+
+    .table3 tr td {
+        padding-left: 7.6px;
+    }
+
+    th,
+    td {
+        padding: 2px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        margin: 20px;
+        border-collapse: collapse;
+    }
+
+    th {
+        width: 100vh;
+    }
+
+    table {
+        background-color: antiquewhite;
+        place-self: start;
+    }
+
+    .con2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .oe {
+        margin-left: 130px;
+        top: -35px;
+    }
+
+
+    .ce{
+        top: -35px;
+        left: 130px;
+    }
+
+</style>
+
+<style media="screen and (max-width: 977px)">
+    img.logo{
+        height: 70px;
+        width: 70px;
+    }
+
+    p.p{
+        font-size: .9rem;
+    }
+
+    #header ul li {
+        font-size: 10px;
+        width: 100px;
+        height: 20px;
+        padding: auto;
+        line-height: 17px;
+    }
+
+    .item.item1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item.item2 header ul {
+        flex-wrap: wrap;
+    }
+
+    li.oe{
+        margin-left: 90px;
+    }
+
+    caption{
+        font-size: .9rem;
+    }
+
+    th,tr,td{
+        font-size: .7rem;
+    }
+
+    div.con2{
+        flex-direction: column;
+    }
+
+    table{
+        width: 70%;
+        align-self: center;
+    }
+
+</style>
+
+<body>
+    <div class="head">
+        <div class="item item1">
+            <img src="http://pdeapune.org/image/logohd.jpg" class="logo" alt="P.D.E.A" />
+            <div class="namee">
+                <p class="p">पुणे जिल्हा शिक्षण मंडळ , पुणे</p>
+                <p class="p">Pune District Education Association, Pune</p>
+                <p class="p">Sector No. 28, Pradhikaran, Akurdi, Pune-411044.</p>
+            </div>
+        </div>
+        <div class="item item2">
+            <header id="header">
+                <ul>
+                    <li><a href="https://architadhole.github.io/Home/">Home</a></li>
+                    <li>
+                        About Us
+                        <ul>
+                            <li><a href="https://architadhole.github.io/Vision/">Vision</a></li>
+                            <li><a href="https://architadhole.github.io/Mission/">Mission</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://architadhole.github.io/Committee/">Committee</li></a>
+                    <li>School
+                        <ul>
+                            <li><a href="https://architadhole.github.io/Facilities/">Facilites</a></li>
+                            <li><a href="https://architadhole.github.io/Rules/">Rules</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Admission
+                        <ul>
+                            <li><a href="https://architadhole.github.io/Pre-Primary/">Pre-Primary</a></li>
+                            <li><a href="https://architadhole.github.io/Primary/">Primary</a></li>
+                            <li class="nbt"><a href="https://architadhole.github.io/Secondary/">Secondary</a></li>
+                        </ul>
+                    </li>
+                    <li>Exams
+                        <ul>
+                            <li><a href="https://architadhole.github.io/Evaluation/">Evaluation</a></li>
+                            <li>Other Exams
+                                <ul>
+                                    <li class="oe"><a href="https://architadhole.github.io/Avishkar/">Avishkar Test</a></li>
+                                    <li class="oe"><a href="https://architadhole.github.io/Sambodh/">Sambodh Exam</a></li>
+                                </ul>
+                            </li>
+                            <li class="nbt">Compititive Exams
+                                <ul>
+                                    <li class="ce"><a href="https://architadhole.github.io/Scholarship/">Scholarship Exam</a></li>
+                                    <li class="ce"><a href="https://architadhole.github.io/Drawing/">Drawing Grade</a></li>
+                                    <li class="nbt ce"><a href="https://architadhole.github.io/Olympaid/">Olympaid</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Achievements
+                        <ul>
+                            <li><a href="https://architadhole.github.io/SSC/">SSC Results</a></li>
+                            <li><a href="https://architadhole.github.io/HSC/">HSC Results</a></li>
+                            <li class="nbt"><a href="https://architadhole.github.io/Sports/">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://architadhole.github.io/Gallery/">Gallery</a></li>
+                    <li><a href="https://architadhole.github.io/Contact/">Contact Us</a></li>
+                </ul>
+            </header>
+        </div>
+    </div>
+    <div class="con2">
+        <table class="table1">
+            <caption>School Committee</caption>
+            <tr>
+                <th>Member</th>
+                <th>Designation</th>
+            </tr>
+            <tr>
+                <td>Hon. Ajitdada Pawar</td>
+                <td>President</td>
+            </tr>
+            <tr>
+                <td>Hon. Rajendra Ghadge</td>
+                <td>Vice-President</td>
+            </tr>
+            <tr>
+                <td>Hon. Adv. Sandeep Kadam</td>
+                <td>Hon. Secretary</td>
+            </tr>
+            <tr>
+                <td>Hon. Adv. Mohanrao Deshmukh</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Sandeep Jagdhane</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Sanjay Chavan</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. A.M. Jadhav</td>
+                <td>Invited Member</td>
+            </tr>
+            <tr>
+                <td>Hon. M.S. Nachonkar</td>
+                <td>Representative of Secondary Teaching Staff</td>
+            </tr>
+            <tr>
+                <td>Hon. S.D. Mokate</td>
+                <td>Representative of Primary Teaching Staff</td>
+            </tr>
+            <tr>
+                <td>Hon. S.S. Salunke</td>
+                <td>Representative of Secondary Non Teaching Staff</td>
+            </tr>
+            <tr>
+                <td>Hon. S.T. Lawande</td>
+                <td>Representative of Primary Non Teaching Staff</td>
+            </tr>
+            <tr>
+                <td>Hon R.R. Kusalkar
+                    <br><span class="sfs">(Secondary Principal)</span>
+                </td>
+                <td>Secretary</td>
+            </tr>
+            <tr>
+                <td>Hon A.T. Fernandes
+                    <br><span class="sfs">(Primary Principal)</span>
+                </td>
+                <td>Secretary</td>
+            </tr>
+        </table>
+        <table class="table2">
+            <caption>Co-Ordination Committee</caption>
+            <tr>
+                <th>Member</th>
+                <th>Designation</th>
+            </tr>
+            <tr>
+                <td>Hon. Ajitdada Pawar</td>
+                <td>President</td>
+            </tr>
+            <tr>
+                <td>Hon. Adv. Sandeep Kadam</td>
+                <td>Hon. Secretary</td>
+            </tr>
+            <tr>
+                <td>Hon. Rajendra Ghadge</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Adv. Mohanrao Deshmukh</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>L.M. Pawar</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. P.E. Kulkarni</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>R.B. Khaire</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>R.B. Aawari</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. A.M. Jadhav</td>
+                <td>Invited Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Dr. Nitin Ghorpade</td>
+                <td>H.M. Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. Dr. B.N. Zaware</td>
+                <td>H.M. Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. Dr. Snt. R.R. Patil</td>
+                <td>H.M. Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. S.B. Ladake</td>
+                <td>H.M. Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. Smt. S.H. Gaikwad</td>
+                <td>H.M. Representative</td>
+            </tr>
+        </table>
+        <table class="table3">
+            <caption>Governing Council Committee</caption>
+            <tr>
+                <th>Member</th>
+                <th>Designation</th>
+            </tr>
+            <tr>
+                <td>Hon. Ajitdada Pawar</td>
+                <td>President</td>
+            </tr>
+            <tr>
+                <td>Hon. Rajendra Ghadge</td>
+                <td>Vice-President</td>
+            </tr>
+            <tr>
+                <td>Hon. Adv. Sandeep Kadam</td>
+                <td>Hon. Secretary</td>
+            </tr>
+            <tr>
+                <td>Hon. Adv. Mohanrao Deshmukh</td>
+                <td>Treasurer</td>
+            </tr>
+            <tr>
+                <td>Hon. L.M. Pawar</td>
+                <td>Asst. Secretary</td>
+            </tr>
+            <tr>
+                <td>Hon. Raghunathrao Bhosale</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Satish Magar</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. R.S. Podar</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. B.D. Ghofane</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Sandeep Jagadhane</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Ajay Nathuram Kadam</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Balasaheb Parge</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Smt. Vibhatai Boke</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Hon. A.M. Jadhav</td>
+                <td>Invited Member</td>
+            </tr>
+            <tr>
+                <td>Hon. Dr. M.G. Chaskar</td>
+                <td>Principal Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. K.M. Deshpande</td>
+                <td>Life Worker Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. M.N. Devdhar</td>
+                <td>Life Worker Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. A.M. Shaikh</td>
+                <td>Headmaster Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. V.B. Dangat</td>
+                <td>Headmaster Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. Shri. S.S. Walhekar</td>
+                <td>Headmaster Representative</td>
+            </tr>
+            <tr>
+                <td>Hon. Smt. A.T. Fernandes</td>
+                <td>Headmistererss Representative</td>
+            </tr>
+            <tr>
+        </table>
+    </div>
+</body>
+</html>
